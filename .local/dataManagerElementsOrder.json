@@ -1,0 +1,39 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Grabar.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Folder&Sequence_2",
+        "Carpeta&Sequence_2",
+        "Raiz&Sequence_2",
+        "Path&Sequence_2",
+        "Directorio2&Sequence_2",
+        "DirectorioGrabador&Sequence_2",
+        "directorio&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Stop.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Directorio2&Sequence_2",
+        "DirectorioStop&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
