@@ -6,6 +6,7 @@ import time
 import os
 import sys
 from datetime import datetime
+import ctypes
 
 # Función para crear el archivo detener_grabacion.txt si no existe
 def crear_archivo_detener_grabacion():
@@ -22,6 +23,9 @@ def reducir_calidad_imagen(img, calidad):
 
 # Función para grabar el escritorio
 def grabar_escritorio(directorio:str):
+    # Minimizar la ventana de la terminal de Python en Windows
+    ctypes.windll.user32.ShowWindow(ctypes.windll.kernel32.GetConsoleWindow(), 6)  # 6 representa SW_MINIMIZE
+    
     crear_archivo_detener_grabacion()
     pantalla = pyautogui.size()
     codec = cv2.VideoWriter_fourcc(*"mp4v")
@@ -56,7 +60,7 @@ def grabar_escritorio(directorio:str):
 
 if len(sys.argv) >= 2:
     directorio = sys.argv[1]
-#else:
-#    directorio = "D:/Reportes/"
+else:
+    directorio = "S:/Reportes/"
 hilo_grabacion = threading.Thread(target=grabar_escritorio, args=(directorio,))
 hilo_grabacion.start()
